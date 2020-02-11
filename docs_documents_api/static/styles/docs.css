@@ -1,0 +1,239 @@
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body{
+    text-align: center;  
+    margin:0px;
+    min-height: 100%;
+    width: 100%;
+}
+
+h1{color:#5D9CEE;}
+header{
+    top: 0px;
+    left: 0px;
+    min-height: 3em;
+    width: 100%;
+    background-color: #F3F0F0;
+    border: 1px solid gray;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.container{
+    height: 100%;
+    min-height: 100%;
+    width: 90%;
+    position: absolute;
+    padding: 30px;
+}
+
+.about-text{
+    text-align: left;
+    width: 700px;
+}
+
+.about-text p{
+    margin-top: 2px;
+}
+
+.about-text h3{
+    margin: 2px;
+}
+
+.collapseAll{
+    height: 3em;
+    margin: 5px auto;
+    display: inline-block;
+    float: right;
+    line-height: 0px;
+}
+
+.search_form {
+    text-align: left;
+    background-color: #F3F0F0;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-left{
+    width: 400px;
+}
+
+.flex-item{
+    flex-grow: 1;
+}
+
+.vertical div{
+    display: block;
+}
+
+.search_container {
+    width: 600px;
+}
+
+.expire_links {
+    text-align: right;
+}
+
+.top_pad {
+    min-height: 20%;
+}
+
+#search_results {
+    margin: 30px;
+}
+
+#core_data{
+    margin: 0 auto;
+}
+
+#core_data td, #core_data th {
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: left;
+    width: 20%;
+}
+
+#core_data tr:nth-child(even){
+    background-color: #eee
+}
+
+#core_data tr:nth-child(odd){
+    background-color: #fff
+}
+
+#appraisal_data td, #appraisal_data th {
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: left;
+    width: 20%;
+    border-collapse: separate;
+}
+
+#appraisal_data td{
+    background-color: #eee
+}
+
+#appraisal_data th{
+    background-color: #fff
+}
+
+td {
+  padding: 3px;
+  text-align: left;
+}
+
+.accordion {
+    padding: 5px;
+    background-color: #ddd;
+    height: 40px;
+    margin: 1px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+  background-color: #ccc;
+}
+div.panel {
+    padding: 18px;
+    background-color: white;
+    border: 3px solid #ddd;
+    display: none;
+    text-align: left;
+    transition: max-height 0.2s ease-out;
+}
+div.panel-show {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: show;
+    transition: max-height 0.2s ease-out;
+}
+
+.details {
+    margin-top: 60px;
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 30%;
+}
+
+.row {
+    border: 1px solid #ddd;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.export {
+    float: right;
+    margin: 5px;
+}
+
+#toastSuccess, #toastFail {
+    visibility: hidden;
+    min-width: 250px;
+    height: 30px;
+    margin-left: -125px;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#toastSuccess {
+    background-color: #018465;
+    color: #fff;
+}
+
+#toastFail {
+    background-color: #7D2121;
+    color: #fff;
+}
+
+#toastSuccess.show, #toastFail.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

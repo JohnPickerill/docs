@@ -1,0 +1,11 @@
+__title__ = 'docs_documents_api'
+__description__ = 'DOCS Object API'
+__url__ = ''
+__updated__ = 'Dec/2019'
+__version_info__ = ('0', '0', '1')
+__version__ = '.'.join(__version_info__)
+__author__ = 'John Pickerill'
+__author_email__ = 'john.pickerill@landregistry.gov.uk'
+__maintainer__ = 'Land Registry'
+__license__ = 'MIT'
+__copyright__ = '(c) 2019 by John Pickerill'
